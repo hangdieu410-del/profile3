@@ -2,113 +2,147 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Profile Cá Nhân</title>
+    <title>Profile Học Sinh</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             background-color: #f4f6f8;
             margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
             padding: 20px;
         }
-
         h1 {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
+            color: #333;
         }
-
-        .container {
-            display: flex;
+        .profiles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
         }
-
-        .profile-card {
-            background: #ffffff;
-            width: 280px;
-            border-radius: 10px;
+        .card {
+            background-color: #ffffff;
+            border-radius: 12px;
             padding: 20px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
             text-align: center;
         }
-
-        .profile-card img {
+        .avatar {
             width: 120px;
             height: 120px;
             border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 15px;
+        }
+        .avatar img {
+            width: 100%;
+            height: 100%;
             object-fit: cover;
-            margin-bottom: 15px;
         }
-
-        .profile-card h2 {
-            margin: 10px 0 5px;
-        }
-
-        .profile-card p {
-            margin: 5px 0;
-            color: #555;
-        }
-
-        .label {
+        .name {
+            font-size: 20px;
             font-weight: bold;
-            color: #333;
+            margin-bottom: 10px;
         }
-
-        .fb-link {
-            display: inline-block;
-            margin-top: 12px;
-            text-decoration: none;
-            color: white;
-            background-color: #1877f2;
-            padding: 8px 16px;
-            border-radius: 5px;
+        .info {
+            font-size: 15px;
+            color: #555;
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #777;
             font-size: 14px;
-        }
-
-        .fb-link:hover {
-            background-color: #0f5dc1;
         }
     </style>
 </head>
 <body>
 
-<h1>Thông Tin Cá Nhân</h1>
-
 <div class="container">
+    <h1>Profile Giới Thiệu Học Sinh</h1>
 
-    <!-- Profile 1 -->
-    <div class="profile-card">
-        <img src="https://via.placeholder.com/150" alt="Avatar 1">
-        <h2>Trần Thị Diệu Hằng</h2>
-        <p><span class="label">Tuổi:</span> 17</p>
-        <p><span class="label">Nghề nghiệp:</span> Học sinh</p>
-        <a class="fb-link" href="https://www.facebook.com/hang.nek74" target="_blank">
-            Facebook
-        </a>
+    <div class="profiles">
+
+        <!-- Trần Thị Diệu Hằng -->
+        <div class="card">
+            <div class="avatar">
+                <img src="https://uploads.onecompiler.io/447n5php3/447n5nqe4/hang.jpg" alt="Trần Thị Diệu Hằng">
+            </div>
+            <div class="name">Trần Thị Diệu Hằng</div>
+            <div class="info">
+                Tuổi: 17<br>
+                Lớp: 12A1<br>
+                Trường: THPT Chu Văn An<br><br>
+
+                Giới thiệu: Mình là Trần Thị Diệu Hằng, hiện đang là học sinh lớp 12A1 trường THPT Chu Văn An.
+                Mình là người năng động, hòa đồng và luôn tích cực tham gia các hoạt động của lớp,
+                đồng thời cố gắng học tập tốt để đạt được mục tiêu của bản thân.<br><br>
+
+                Facebook: <a href="https://www.facebook.com/hang.nek74" target="_blank">hang.nek74</a><br><br>
+
+                <audio controls>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+
+        <!-- Lê Thị Vân Anh -->
+        <div class="card">
+            <div class="avatar">
+                <img src="https://uploads.onecompiler.io/447n5php3/447n5nqe4/vanh.jpg" alt="Lê Thị Vân Anh">
+            </div>
+            <div class="name">Lê Thị Vân Anh</div>
+            <div class="info">
+                Tuổi: 17<br>
+                Lớp: 12A1<br>
+                Trường: THPT Chu Văn An<br><br>
+
+                Giới thiệu: Mình là Lê Thị Vân Anh, học sinh lớp 12A1 trường THPT Chu Văn An.
+                Mình là người hiền lành, chăm chỉ trong học tập và luôn có ý thức trách nhiệm
+                với những công việc và hoạt động chung của lớp.<br><br>
+
+                Facebook: <a href="https://www.facebook.com/anhh.vann.980" target="_blank">anhh.vann.980</a><br><br>
+
+                <audio controls>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+
+        <!-- Nguyễn Hà Linh -->
+        <div class="card">
+            <div class="avatar">
+                <img src="https://uploads.onecompiler.io/447n5php3/447n5nqe4/linh.jpg" alt="Nguyễn Hà Linh">
+            </div>
+            <div class="name">Nguyễn Hà Linh</div>
+            <div class="info">
+                Tuổi: 17<br>
+                Lớp: 12A1<br>
+                Trường: THPT Chu Văn An<br><br>
+
+                Giới thiệu: Mình là Nguyễn Hà Linh, hiện đang là học sinh lớp 12A1 trường THPT Chu Văn An.
+                Mình sống khá trầm, yêu thích âm nhạc và thường tìm cảm hứng học tập qua những giai điệu nhẹ nhàng,
+                đồng thời luôn cố gắng hoàn thiện bản thân mỗi ngày.<br><br>
+
+                Facebook: <a href="https://www.facebook.com/ha.linhh.714211" target="_blank">ha.linhh.714211</a><br><br>
+
+                <audio controls>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-13.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+
     </div>
 
-    <!-- Profile 2 -->
-    <div class="profile-card">
-        <img src="https://via.placeholder.com/150" alt="Avatar 2">
-        <h2>Lê Thị Vân Anh</h2>
-        <p><span class="label">Tuổi:</span> 17</p>
-        <p><span class="label">Nghề nghiệp:</span> Học sinh</p>
-        <a class="fb-link" href="https://www.facebook.com/anhh.vann.980/friends_mutual" target="_blank">
-            Facebook
-        </a>
-    </div>
-
-    <!-- Profile 3 -->
-    <div class="profile-card">
-        <img src="https://via.placeholder.com/150" alt="Avatar 3">
-        <h2>Nguyễn Hà Linh</h2>
-        <p><span class="label">Tuổi:</span> 17</p>
-        <p><span class="label">Nghề nghiệp:</span> Học sinh</p>
-        <a class="fb-link" href="https://www.facebook.com/ha.linhh.714211" target="_blank">
-            Facebook
-        </a>
-    </div>
-
+    <footer>
+        © 2025 - Trang profile học sinh
+    </footer>
 </div>
 
 </body>
